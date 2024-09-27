@@ -1,0 +1,1078 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* cara menggunakan font-family */
+/* 
+  Font Instrument Serif - Bisa regular dan italic
+  font-family: "Instrument Serif", serif; 
+
+  Font Roboto Condensed
+  font-family: "Roboto Condensed", sans-serif;
+
+  Font Montserrat
+  font-family: "Montserrat", sans-serif;
+
+  Font Ibarra Real Nova 
+  font-family: "Ibarra Real Nova", serif;
+*/
+
+/* Lucida Handwriting */
+/* regular */
+@font-face {
+  font-family: "lucida-rg";
+  src: url("assets/fonts/lucida-handwriting-std/LucidaHandwritingStdRg.TTF") format("truetype");
+}
+
+/* keyframe - animation */
+
+/* bounce */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+/* slideUp */
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* css animation */
+
+/* media query - responsive */
+/* Mobile */
+/* @media (min-width: 320px) and (max-width: 480px) {
+  aside {
+    display: none;
+  }
+} */
+
+/* tablet & phone*/
+@media (min-width: 320px) and (max-width: 769px) {
+  aside {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  .background {
+    background-image: url("assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -90;
+  }
+
+  .aside-h1 {
+    font-size: 2px;
+  }
+
+  .aside-p {
+    font-size: 8px;
+  }
+
+  .aside-nama-tamu {
+    font-size: 20px;
+  }
+}
+
+/* Laptop */
+@media (min-width: 769px) {
+  main {
+    max-width: 393px;
+  }
+
+  aside {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    z-index: -99;
+  }
+
+  .background {
+    background-image: url("assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    position: fixed;
+    height: 100vh;
+    width: 393px;
+    z-index: -90;
+  }
+}
+
+/* ALL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  overflow: hidden;
+}
+
+/* bagian kiri */
+aside {
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: -99;
+}
+
+aside article {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 30px;
+}
+
+.aside-h1 {
+  /* font: 500 12px "ibarra real nova", serif; */
+  font: 500 0.8em "ibarra real nova", serif;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+.aside-p {
+  /* font: 300 12px "roboto condensed", sans-serif; */
+  font: 300 0.8em "roboto condensed", sans-serif;
+  /* text-align: justify; */
+  margin-top: 70px;
+  letter-spacing: 2px;
+}
+
+.aside-p2 {
+  /* font: 400 18px "ibarra real nova", serif; */
+  font: 400 1em "ibarra real nova", serif;
+  margin-top: 70px;
+}
+
+.aside-nama-tamu {
+  /* font: 700 32px "ibarra real nova", serif; */
+  font: 700 1.5em "ibarra real nova", serif;
+  letter-spacing: 5px;
+  margin-top: 20px;
+}
+
+/* background image */
+.img-aside {
+  background-image: url("assets/images/background-fixed-3.jpeg");
+  position: fixed;
+  background-size: cover;
+  filter: blur(2px);
+  opacity: 0.3;
+  /* background-position-x: -140px; */
+  background-position-x: 70%;
+  background-position-y: 80%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+/* bagian kanan */
+main {
+  /* max-width: 393px; */
+}
+
+/* .background {
+  background-image: url("assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: -90;
+} */
+
+/* halaman cover */
+#cover {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.wrapper-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.content-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+/* judul */
+.content-cover h1 {
+  font-family: "instrument serif", serif;
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+/* nama mempelai */
+.nama-mempelai {
+  font-weight: 400;
+  font-family: "lucida-rg", serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+  letter-spacing: 5px;
+}
+
+.invited {
+  font-family: "instrument serif", serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* card */
+.card {
+  width: 350px;
+  height: 150px;
+  text-align: center;
+  background: rgb(217, 217, 217);
+  background: linear-gradient(310deg, rgba(217, 217, 217, 0.4) 0%, rgba(217, 217, 217, 0.1) 100%);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.card p {
+  font-size: 16px;
+  font-family: "instrument serif", serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.btn-opn-invt {
+  font-family: "instrument serif", serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #404628;
+  height: 40px;
+  width: 163px;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 3px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.btn-opn-invt a {
+  text-decoration: none;
+}
+
+/* surah */
+#surah-arrum {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-surah {
+  margin: 5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content-surah {
+  background-color: #32361f;
+  height: 500px;
+  width: 350px;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 25px;
+}
+
+/* judul dan arab surah */
+.wrapper-judul-surah {
+  margin-bottom: 50px;
+}
+
+.wrapper-judul-surah h1 {
+  font-size: 24px;
+  font-family: "instrument serif", serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+/* arab surah */
+.arab-surah {
+  font-family: "montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 50px;
+}
+
+/* arti surah */
+.arti-surah {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* Mempelai */
+#love {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wrapper-mempelai {
+  margin: 5em 0;
+}
+
+.content-mempelai {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+/* teks pembuka */
+.txt-pembuka {
+  text-align: center;
+  font-size: 12px;
+  font-family: "montserrat", sans-serif;
+  margin: 0 22px 30px;
+}
+
+/* foto mempelai pria */
+.img-pria {
+  width: 170px;
+  height: 200px;
+  background-image: url("assets/images/riswan-1.jpg");
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 5px rgba(64, 70, 40, 1);
+  border-radius: 40px 40px 0 0;
+  margin-left: 25px;
+}
+
+/* nama mempelai pria */
+.nama-pria {
+  width: 250px;
+  height: 45px;
+  position: absolute;
+  border-radius: 0 10px 0 0;
+  margin: 145px 0px 10px 10px;
+  background-color: #404628;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 15px;
+}
+
+.nama-pria .nama {
+  font-size: 16px;
+  font-family: "instrument serif", serif;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.nama-pria .keluarga-mempelai {
+  font-size: 10px;
+  font-family: "instrument serif", serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* foto mempelai wanita */
+.img-wanita {
+  width: 170px;
+  height: 200px;
+  background-image: url("assets/images/xaviera.jpg");
+  background-size: cover;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 5px 5px rgba(64, 70, 40, 1);
+  border-radius: 40px 40px 0 0;
+  /* margin: 50px 25px 0 198px; */
+  margin: 50px 25px 0px auto;
+}
+
+/* nama mempelai wanita */
+.nama-wanita {
+  width: 250px;
+  height: 45px;
+  position: absolute;
+  border-radius: 10px 0 0 0;
+  margin: 145px 35px 10px 10px;
+  transform: translateX(-40%);
+  background-color: #404628;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 15px;
+}
+
+.nama-wanita .nama {
+  font-size: 16px;
+  font-family: "instrument serif", serif;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.nama-wanita .keluarga-mempelai {
+  font-size: 10px;
+  font-family: "instrument serif", serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Sosial Media */
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 210px 10px 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.wrapper-ig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #404628;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  border-radius: 14px;
+}
+
+.sosmed .instagram {
+  background-image: url("assets/icons/instagram.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
+
+/* Facebook */
+.wrapper-fb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #404628;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+  border-radius: 14px;
+}
+
+.sosmed .facebook {
+  background-image: url("assets/icons/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
+
+/* event */
+#event {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 0 5em;
+  overflow: hidden;
+}
+
+.wrapper-event {
+  margin: 4em 0;
+}
+
+.card-akad-resepsi {
+  width: 350px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 15px 15px 0;
+  margin: 30px auto;
+  background-color: #404628;
+}
+
+.card-akad-resepsi h1 {
+  font-family: "ibarra real nova", serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-akad-resepsi h1::after {
+  content: " ";
+  width: 189px;
+  height: 1.2px;
+  position: absolute;
+  margin: 15px 15px 0 5px;
+  background-color: #fff;
+}
+
+.detail-akad-resepsi {
+  width: 308px;
+  margin: 20px 0;
+}
+
+.detail-akad-resepsi p {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "montserrat", sans-serif;
+}
+
+.wrapper-tanggal,
+.wrapper-waktu,
+.wrapper-tempat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tanggal,
+.waktu,
+.tempat {
+  width: 66px;
+  margin-right: 20px;
+}
+
+.detail-tgl,
+.detail-waktu,
+.detail-tempat {
+  margin-left: 10px;
+}
+
+.titik-dua {
+  margin-left: 20px;
+}
+
+/* BUTTON */
+.button-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* button location - maps */
+.btn-location {
+  height: 29px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  background-color: #32361f;
+  cursor: pointer;
+}
+.btn-calendar {
+  height: 29px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  background-color: #32361f;
+  cursor: pointer;
+}
+
+.btn-location a img,
+.btn-calendar a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.btn-location a,
+.btn-calendar a {
+  height: 16px;
+  font-size: 12px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* countdown */
+.wrapper-countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cd-hari,
+.cd-jam,
+.cd-menit,
+.cd-detik {
+  font-family: "ibarra real nova", serif;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #404628;
+  width: 64px;
+  height: 58px;
+  border-radius: 10px;
+}
+
+.cd-hari .count,
+.cd-jam .count,
+.cd-menit .count,
+.cd-detik .count {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* gallery */
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrapper-gallery {
+  margin: 5em 0;
+  width: 350px;
+}
+
+.content-gallery {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-1-2 {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery-img-1:hover,
+.gallery-img-2:hover,
+.gallery-img-3:hover,
+.gallery-img-4:hover,
+.gallery-img-5:hover,
+.gallery-img-6:hover,
+.gallery-img-7:hover {
+  transform: scale(1.07);
+}
+
+.gallery-img-1 {
+  cursor: pointer;
+  background: url("assets/images/xaviera-4.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 150px;
+  width: 118px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img-2 {
+  cursor: pointer;
+  background: url("assets/images/riswan-2.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 150px;
+  width: 222px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img-3 {
+  cursor: pointer;
+  background: url("assets/images/xaviera-3.jpg") 100% 40% no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 150px;
+  width: 170px;
+  margin: 0px 10px 10px 0;
+  transition: transform 0.3s ease;
+}
+
+.img-4-5 {
+  width: 170px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gallery-img-4 {
+  cursor: pointer;
+  background-image: url("assets/images/riswan-4.jpg");
+  background-size: cover;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 72px;
+  width: 170px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img-5 {
+  cursor: pointer;
+  background-image: url("assets/images/xaviera-5.jpg");
+  background-size: cover;
+  background-position: 100% 40%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 72px;
+  width: 170px;
+  transition: transform 0.3s ease;
+}
+
+.img-6-7 {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-img-6 {
+  cursor: pointer;
+  background-image: url("assets/images/riswan-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 150px;
+  width: 170px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img-7 {
+  cursor: pointer;
+  background-image: url("assets/images/xaviera-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 150px;
+  width: 170px;
+  transition: transform 0.3s ease;
+}
+
+/* RSVP */
+#rsvp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-rsvp {
+  background-color: #404628;
+  border-radius: 10px;
+  height: 450px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 100px 0 2em;
+}
+
+.content-rsvp form {
+  margin: auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-field {
+  width: 300px;
+  height: 45px;
+  color: #000;
+  font-size: 12px;
+  font-family: "montserrat", sans-serif;
+  padding: 0 15px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-field:placeholder-shown {
+  font-size: 12px;
+  font-family: "montserrat", sans-serif;
+  color: #bababa;
+  font-weight: 500;
+}
+
+/* Warna hijau ketika input fokus */
+.input-field:focus {
+  border-color: #84a16d;
+}
+
+.input-field option:first-child {
+  color: #bababa;
+}
+
+.input-field option {
+  color: #000;
+  font-size: 12px;
+  font-family: "montserrat", sans-serif;
+}
+
+textarea.input-field {
+  resize: none;
+  height: 80px;
+  padding: 15px 15px 0;
+}
+
+.submit-btn {
+  background-color: #32361f;
+  color: white;
+  font-weight: 700;
+  margin: auto;
+  width: 170px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "ibarra real nova", serif;
+}
+
+.submit-btn:hover {
+  background-color: #2a2d1a;
+}
+
+/* Gift */
+#gift {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-gift {
+  margin: 10em 0;
+  width: 350px;
+  height: 350px;
+  background-color: #32361f;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: "ibarra real nova", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-gift p {
+  width: 300px;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.e-wallet {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* logo bca */
+.logo-bca {
+  width: 100px;
+  height: auto;
+}
+
+.wrapper-bca {
+  margin-bottom: 40px;
+}
+
+/* logo dana */
+.logo-dana {
+  width: 100px;
+  height: 30px;
+}
+
+.wrapper-dana {
+  margin-top: 40px;
+}
+
+/* nomor hp e-wallet */
+p.nomor-wallet {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* penutup */
+#penutup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0 5em;
+}
+
+.container-penutup {
+  background-color: #32361f;
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 17px;
+}
+
+.wrapper-penutup {
+  margin: auto;
+}
+
+.penutup-p {
+  font: 500 10px "montserrat", sans-serif;
+}
+
+.penutup-h2 {
+  font: 26px "lucida-rg", serif;
+  letter-spacing: 0.7px;
+  margin: 10px 0 50px;
+}
+
+.keluarga {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.7px;
+  width: fill;
+  column-gap: 35px;
+}
+
+.keluarga-h4 {
+  font: 20px "lucida-rg", serif;
+  margin: 10px 0;
+}
+
+.keluarga-p {
+  font: 16px "Instrument Serif", serif;
+}
+
+.keluarga-p2 {
+  font: 14px "Instrument Serif", serif;
+  text-align: left;
+}
+
+/* turut mengundang */
+.mengundang {
+  width: 220px;
+  margin: auto;
+}
+
+.mengundang-h2 {
+  font: 16px "lucida-rg", serif;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.mengundang-p {
+  font: 10px "montserrat", sans-serif;
+  text-align: center;
+}
+
+/* navbar */
+.navbar {
+  height: 70px;
+  width: 100%;
+  background-color: #404628;
+  display: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  cursor: pointer;
+  animation: slideUp 1s ease;
+  margin: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.love,
+.event,
+.gallery,
+.rsvp,
+.gift,
+img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 3px;
+}
+
+.love,
+.event,
+.gallery,
+.rsvp,
+.gift {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  transition: background-color 0.1s ease;
+}
+
+.love:hover,
+.event:hover,
+.gallery:hover,
+.rsvp:hover,
+.gift:hover {
+  background-color: #32361f;
+}
+
+/* active */
+.active {
+  background-color: #32361f;
+}

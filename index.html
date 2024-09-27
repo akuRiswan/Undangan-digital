@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LKPD P5 (1)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- AOS - Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- lagu -->
+    <audio id="backsound"><source src="assets/songs/payung-teduh-untuk-perempuan_cut.mp3" /></audio>
+
+    <aside>
+      <div class="img-aside"></div>
+      <article>
+        <h1 class="aside-h1">OUR WEDDING INVITATION</h1>
+        <!-- nama mempelai -->
+        <h2 class="nama-mempelai">Riswan & Xaviera</h2>
+
+        <p class="aside-p">
+          “What counts in making a happy marriage is not so much how compatible you are, but how you deal with incompatibility. A great
+          marriage is not when the perfect couple comes together. It is when an imperfect couple learns to enjoy their differences.”
+        </p>
+
+        <p class="aside-p2">Kepada Bapak/Ibu/Saudara/i</p>
+        <h2 class="aside-nama-tamu">Tamu Undangan</h2>
+      </article>
+    </aside>
+
+    <main>
+      <!-- background fixed -->
+      <div class="background"></div>
+
+      <!-- button music dan scroll ke atas -->
+      <div class="btn-pause"></div>
+
+      <!-- Halaman Cover -->
+      <section id="cover">
+        <div class="wrapper-cover">
+          <div class="content-cover">
+            <!-- judul -->
+            <header id="con-cover">
+              <h1 data-aos="fade" data-aos-duration="1500">The Wedding Of</h1>
+            </header>
+            <!-- nama mempelai -->
+            <div class="nama-mempelai" data-aos="zoom-out" data-aos-duration="1300">
+              Riswan <br />&<br />
+              Xaviera
+            </div>
+
+            <div class="invited">We Invite You To Celebrate Our Wedding</div>
+          </div>
+          <!-- card -->
+          <div class="card" data-aos="fade-up" data-aos-duration="1500">
+            <p>
+              Kepada : <br />
+              Bapak/Ibu/Saudara/i
+            </p>
+            <!-- button open invitation -->
+            <button class="btn-opn-invt" id="btn-opn">Open Invitation</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Surah -->
+      <section id="surah-arrum">
+        <div class="wrapper-surah">
+          <div class="content-surah" data-aos="fade-up" data-aos-duration="1500">
+            <!-- judul dan arab surah -->
+            <div class="wrapper-judul-surah">
+              <h1 class="nama-surah">Qs. Ar-Rum Ayat 21</h1>
+              <p class="arab-surah">
+                وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً
+                وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+              </p>
+            </div>
+
+            <p class="arti-surah">
+              Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar
+              kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu
+              benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Halaman Mempelai - Love -->
+      <section id="love">
+        <div class="wrapper-mempelai">
+          <div class="content-mempelai">
+            <!-- teks pembuka -->
+            <p class="txt-pembuka" data-aos="fade-up">
+              Tanpa mengurangi rasa hormat kami bermaksud mengundang bapak / ibu / saudara / i untuk berhadir pada acara akad dan resepsi
+              kami
+            </p>
+
+            <!-- foto mempelai pria -->
+            <div class="img-pria" data-aos="fade-right" data-aos-duration="1500">
+              <div class="nama-pria">
+                <span class="nama">Muhammad Riswansyah</span>
+                <span class="keluarga-mempelai">Putra Pertama dari Keluarga Bapak Lorem & Ibu Ipsum</span>
+              </div>
+
+              <!-- Sosial Media -->
+              <div class="sosmed">
+                <!-- Instagram -->
+                <div class="wrapper-ig">
+                  <div class="instagram"></div>
+                </div>
+
+                <!-- Facebook -->
+                <div class="wrapper-fb">
+                  <div class="facebook"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- foto mempelai wanita -->
+            <div class="img-wanita" data-aos="fade-left" data-aos-duration="1500">
+              <div class="nama-wanita">
+                <span class="nama">Xaviera Putri</span>
+                <span class="keluarga-mempelai">Putra Pertama dari Keluarga Bapak Lorem & Ibu Ipsum</span>
+              </div>
+
+              <!-- Sosial Media -->
+              <div class="sosmed">
+                <!-- Instagram -->
+                <div class="wrapper-ig">
+                  <div class="instagram"></div>
+                </div>
+
+                <!-- Facebook -->
+                <div class="wrapper-fb">
+                  <div class="facebook"></div>
+                </div>
+              </div>
+            </div>
+            <!-- close img-wanita -->
+          </div>
+          <!-- close content mempelai -->
+        </div>
+      </section>
+
+      <!-- Event -->
+      <section id="event">
+        <div class="wrapper-event">
+          <!-- Akad -->
+          <div class="card-akad-resepsi" data-aos="fade-right" data-aos-duration="1500">
+            <h1>Akad Nikah</h1>
+            <!-- tanggal -->
+            <div class="detail-akad-resepsi">
+              <div class="wrapper-tanggal">
+                <p class="tanggal">Tanggal</p>
+                <span class="titik-dua">:</span>
+                <p class="detail-tgl">13 September 2024</p>
+              </div>
+
+              <!-- waktu -->
+              <div class="wrapper-waktu">
+                <p class="waktu">Waktu</p>
+                <span class="titik-dua">:</span>
+                <p class="detail-waktu">09.00 WITA - 12.00 WITA</p>
+              </div>
+
+              <!-- tempat -->
+              <div class="wrapper-tempat">
+                <p class="tempat">Tempat</p>
+                <span class="titik-dua">:</span>
+                <p class="detail-tempat">Masjid Raya Sabilal Muhtadin</p>
+              </div>
+            </div>
+            <!-- button location - maps -->
+            <div class="button-card">
+              <button type="button" class="btn-location">
+                <a href="https://maps.app.goo.gl/oNJhSygxsbMAt38J7" target="_blank"
+                  ><!-- icon location -->
+                  <img src="assets/icons/Location.svg" alt="Icon Location" />Location</a
+                >
+              </button>
+
+              <!-- button add to calendar -->
+              <button type="button" class="btn-calendar">
+                <a href="https://maps.app.goo.gl/oNJhSygxsbMAt38J7" target="_blank"
+                  ><!-- icon calendar -->
+                  <img src="assets/icons/Calender.svg" alt="Icon Calendar" />Add To Calendar</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- Resepsi -->
+          <div class="card-akad-resepsi" data-aos="fade-left" data-aos-duration="1500">
+            <h1>Resepsi</h1>
+            <!-- tanggal -->
+            <div class="detail-akad-resepsi">
+              <div class="wrapper-tanggal">
+                <p class="tanggal">Tanggal</p>
+                <span class="titik-dua">:</span>
+                <p class="detail-tgl">13 September 2024</p>
+              </div>
+
+              <!-- waktu -->
+              <div class="wrapper-waktu">
+                <p class="waktu">Waktu</p>
+                <span class="titik-dua">:</span>
+                <p class="detail-waktu">09.00 WITA - 14.00 WITA</p>
+              </div>
+
+              <!-- tempat -->
+              <div class="wrapper-tempat">
+                <p class="tempat">Tempat</p>
+                <span class="titik-dua">:</span>
+                <p class="detail-tempat">Masjid Raya Sabilal Muhtadin</p>
+              </div>
+            </div>
+            <!-- button location - maps -->
+            <div class="button-card">
+              <button type="button" class="btn-location">
+                <a href="https://maps.app.goo.gl/oNJhSygxsbMAt38J7" target="_blank">
+                  <!-- icon location -->
+                  <img src="assets/icons/Location.svg" alt="Icon Location" />Location</a
+                >
+              </button>
+
+              <!-- button add to calendar -->
+              <button type="button" class="btn-calendar">
+                <a href="https://maps.app.goo.gl/oNJhSygxsbMAt38J7" target="_blank"
+                  ><!-- icon calendar -->
+                  <img src="assets/icons/Calender.svg" alt="Icon Calendar" />Add To Calendar</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- countdown -->
+          <div class="wrapper-countdown" data-aos="fade-up" data-aos-duration="1500">
+            <div class="cd-hari"><span class="count" id="cd-hari"> 0 </span>Hari</div>
+            <div class="cd-jam"><span class="count" id="cd-jam"> 0 </span>Jam</div>
+            <div class="cd-menit"><span class="count" id="cd-menit"> 0 </span>Menit</div>
+            <div class="cd-detik"><span class="count" id="cd-detik"> 0 </span>Detik</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery">
+        <div class="wrapper-gallery" data-aos="fade-in" data-aos-duration="2000">
+          <div class="content-gallery">
+            <div class="img-1-2">
+              <!-- foto ke 1 -->
+              <div data-aos="fade-right" data-aos-duration="1500">
+                <div class="gallery-img-1"></div>
+              </div>
+              <!-- foto ke 2 -->
+              <div data-aos="fade-left" data-aos-duration="1500">
+                <div class="gallery-img-2"></div>
+              </div>
+            </div>
+
+            <!-- foto ke 3 -->
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">
+              <div class="gallery-img-3"></div>
+            </div>
+
+            <!-- img 4 & 5 -->
+            <div class="img-4-5" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
+              <!-- foto ke 4 -->
+              <div class="gallery-img-4"></div>
+              <!-- foto ke 5 -->
+              <div class="gallery-img-5"></div>
+            </div>
+
+            <div class="img-6-7">
+              <!-- foto ke 6 -->
+              <div data-aos="fade-right" data-aos-duration="1500" data-aos-offset="200">
+                <div class="gallery-img-6"></div>
+              </div>
+              <!-- foto ke 7 -->
+              <div data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
+                <div class="gallery-img-7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section id="rsvp">
+        <div class="wrapper-rsvp" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+          <div class="content-rsvp">
+            <form action="">
+              <!-- input nama -->
+              <label for="nama">Nama</label>
+              <input type="text" id="nama" class="input-field" placeholder="Isi Nama Anda..." autocomplete="off" />
+
+              <!-- inpout nomor hp -->
+              <label for="nomor-hp">Nomor Hp atau Whatsapp</label>
+              <input type="number" id="nomor-hp" class="input-field" placeholder="Nomor Hp atau Whatsapp..." />
+
+              <!-- konfirmasi kehadiran -->
+              <label for="kehadiran">Apakah Anda Dapat Berhadir?</label>
+              <select id="kehadiran" class="input-field">
+                <option value="" disabled selected>Apakah Anda Dapat Berhadir?</option>
+                <option value="ya">Ya</option>
+                <option value="tidak">Tidak</option>
+              </select>
+
+              <!-- input ucapan dan doa -->
+              <label for="ucapan">Ucapan dan Doa Untuk Mempelai</label>
+              <textarea id="ucapan" class="input-field" placeholder="Isi Ucapan dan Doa Untuk Mempelai..."></textarea>
+
+              <!-- button -->
+              <!-- typenya ganti kesubmit sementara button biar tdk direfresh -->
+              <button type="button" class="submit-btn">Kirim Ucapan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- gift -->
+      <section id="gift">
+        <div class="container-gift" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="500">
+          <div class="wrapper-gift">
+            <p>
+              Kehadiran Anda merupakan sebuah do'a serta rasa syukur bagi kami, namun jika memberi adalah bentuk Do'a & cinta kasih bagi
+              Anda, Anda dapat memberi kado secara cashless dan kami akan senang hati menerimanya dan tentu semakin melengkapi kebahagiaan
+              kami.
+            </p>
+
+            <div class="e-wallet">
+              <!-- bca -->
+              <div class="wrapper-bca">
+                <img src="assets/icons/logo-bca.svg" alt="" class="logo-bca" />
+                <p class="nomor-wallet">0812 345 678XX a.n Riswan</p>
+              </div>
+
+              <!-- dana -->
+              <div class="wrapper-dana">
+                <img src="assets/icons/logo-dana.svg" alt="" class="logo-dana" />
+                <p class="nomor-wallet">0812 345 678XX a.n Riswan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- penutup -->
+      <section id="penutup">
+        <div class="container-penutup" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
+          <div class="wrapper-penutup">
+            <div class="wrappeer-pntp-1">
+              <p class="penutup-p">
+                Atas kehadiran dan Doa Restunya kami ucapkan terimakasih. Kami Yang Berbahagia, Keluarga Besar Kedua Mempelai
+              </p>
+              <!-- nama mempelai -->
+              <h2 class="penutup-h2">Riswan & Xaviera</h2>
+            </div>
+
+            <div class="wrapper-pntp-2">
+              <div class="keluarga">
+                <div class="keluarga-pria">
+                  <p class="keluarga-p">Keluarga</p>
+                  <h4 class="keluarga-h4">Riswan</h4>
+                  <p class="keluarga-p2">Bpk.Lorem & Ibu Ipsum</p>
+                </div>
+
+                <!-- keluarga wanita -->
+                <div class="keluarga-wanita">
+                  <p class="keluarga-p">Keluarga</p>
+                  <h4 class="keluarga-h4">Riswan</h4>
+                  <p class="keluarga-p2">Bpk.Lorem & Ibu Ipsum</p>
+                </div>
+              </div>
+
+              <!-- turut mengundang -->
+              <div class="mengundang">
+                <h2 class="mengundang-h2">Turut Mengundang</h2>
+                <p class="mengundang-p">
+                  Keluarga Besar Bpk. Lorem & Ibu Ipsum Keluarga Besar Bpk. Lorem & Ibu Ipsum Dan seluruh keluarga lainnya.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- navbar -->
+      <div class="navbar" id="navbar">
+        <div class="love"><img src="assets/icons/love.svg" alt="" />Love</div>
+        <div class="event"><img src="assets/icons/Calender.svg" alt="" />Event</div>
+        <div class="gallery"><img src="assets/icons/Gallery.svg" alt="" />Gallery</div>
+        <div class="rsvp"><img src="assets/icons/Message.svg" alt="" />RSVP</div>
+        <div class="gift"><img src="assets/icons/Gift.svg" alt="" />Gift</div>
+      </div>
+    </main>
+
+    <!-- javaScript -->
+    <script src="script.js"></script>
+
+    <!-- AOS - Animation Js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
