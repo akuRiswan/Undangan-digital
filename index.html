@@ -27,14 +27,30 @@
         <p class="aside-p2">Kepada Bapak/Ibu/Saudara/i</p>
         <h2 class="aside-nama-tamu">Tamu Undangan</h2>
       </article>
+      <!-- button music dan scroll ke atas -->
+      <!-- <div class="two-btn">
+        <div class="btn-scroll-up">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path
+              fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"
+            />
+          </svg>
+        </div>
+
+        <div class="btn-play-pause">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill" viewBox="0 0 16 16">
+            <path
+              d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5"
+            />
+          </svg>
+        </div>
+      </div> -->
     </aside>
 
     <main>
       <!-- background fixed -->
       <div class="background"></div>
-
-      <!-- button music dan scroll ke atas -->
-      <div class="btn-pause"></div>
 
       <!-- Halaman Cover -->
       <section id="cover">
@@ -107,7 +123,7 @@
               <div class="sosmed">
                 <!-- Instagram -->
                 <div class="wrapper-ig">
-                  <div class="instagram"></div>
+                  <div class="instagram" id="ig-pria"></div>
                 </div>
 
                 <!-- Facebook -->
@@ -128,7 +144,7 @@
               <div class="sosmed">
                 <!-- Instagram -->
                 <div class="wrapper-ig">
-                  <div class="instagram"></div>
+                  <div class="instagram" id="ig-wanita"></div>
                 </div>
 
                 <!-- Facebook -->
@@ -154,7 +170,7 @@
               <div class="wrapper-tanggal">
                 <p class="tanggal">Tanggal</p>
                 <span class="titik-dua">:</span>
-                <p class="detail-tgl">13 September 2024</p>
+                <p class="detail-tgl">5 Oktober 2024</p>
               </div>
 
               <!-- waktu -->
@@ -182,7 +198,7 @@
 
               <!-- button add to calendar -->
               <button type="button" class="btn-calendar">
-                <a href="https://maps.app.goo.gl/oNJhSygxsbMAt38J7" target="_blank"
+                <a href="https://calendar.google.com/calendar/u/0/r/day/2024/10/5" target="_blank"
                   ><!-- icon calendar -->
                   <img src="assets/icons/Calender.svg" alt="Icon Calendar" />Add To Calendar</a
                 >
@@ -198,7 +214,7 @@
               <div class="wrapper-tanggal">
                 <p class="tanggal">Tanggal</p>
                 <span class="titik-dua">:</span>
-                <p class="detail-tgl">13 September 2024</p>
+                <p class="detail-tgl">6 Oktober 2024</p>
               </div>
 
               <!-- waktu -->
@@ -226,7 +242,7 @@
 
               <!-- button add to calendar -->
               <button type="button" class="btn-calendar">
-                <a href="https://maps.app.goo.gl/oNJhSygxsbMAt38J7" target="_blank"
+                <a href="https://calendar.google.com/calendar/u/0/r/day/2024/10/6" target="_blank"
                   ><!-- icon calendar -->
                   <img src="assets/icons/Calender.svg" alt="Icon Calendar" />Add To Calendar</a
                 >
@@ -312,8 +328,7 @@
               <textarea id="ucapan" class="input-field" placeholder="Isi Ucapan dan Doa Untuk Mempelai..."></textarea>
 
               <!-- button -->
-              <!-- typenya ganti kesubmit sementara button biar tdk direfresh -->
-              <button type="button" class="submit-btn">Kirim Ucapan</button>
+              <button type="submit" class="submit-btn" id="submit-btn">Kirim Ucapan</button>
             </form>
           </div>
         </div>

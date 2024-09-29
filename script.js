@@ -129,9 +129,32 @@ document.addEventListener("scroll", function () {
   }
 });
 
+// function icon Instagram
+const igPria = "https://www.instagram.com/riswan.idk/";
+const igWanita = "https://www.instagram.com/xavieraaputri/";
+
+// Event listener untuk div pria
+document.getElementById("ig-pria").addEventListener("click", function () {
+  window.open(igPria, "_blank");
+});
+
+// Event listener untuk div wanita
+document.getElementById("ig-wanita").addEventListener("click", function () {
+  window.open(igWanita, "_blank");
+});
+
+// Button Kirim Ucapan - Agar tidak kerefresh saat diklik
+document.querySelector(".submit-btn").addEventListener("click", function (event) {
+  // Mencegah refresh halaman
+  event.preventDefault();
+
+  // Lakukan sesuatu di sini (misalnya mengirim data via AJAX atau mengupdate UI)
+  console.log("Ucapan berhasil dikirim tanpa refresh!");
+});
+
 // Countdown
 // Tetapkan tanggal target hitung mundur
-const countDownDate = new Date("Sep 30, 2024 12:00:00").getTime();
+const countDownDate = new Date("Oct 6, 2024 09:00:00").getTime();
 
 // Perbarui hitung mundur setiap 1 detik
 const x = setInterval(function () {
