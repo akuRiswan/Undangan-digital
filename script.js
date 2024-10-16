@@ -185,3 +185,52 @@ const x = setInterval(function () {
     document.getElementById("cd-detik").innerHTML = "0";
   }
 }, 1000);
+
+// Slideshow - Tugas 2
+let currentSlideIndex = 0; // Inisialisasi indeks slide saat ini
+const slides = document.querySelectorAll(".content-gallery .img");
+
+// Fungsi untuk menampilkan gambar berdasarkan indeks
+function showSlide(index) {
+  const popupImage = document.querySelector(".popup-image img");
+  popupImage.src = slides[index].getAttribute("src"); // Tampilkan gambar sesuai indeks
+}
+
+// Popup gambar ketika diklik
+document.querySelectorAll(".content-gallery .img").forEach((image, index) => {
+  image.onclick = () => {
+    currentSlideIndex = index; // Set indeks gambar saat ini
+    document.querySelector(".popup-image").style.display = "block";
+    showSlide(currentSlideIndex); // Tampilkan gambar sesuai indeks
+  };
+});
+
+// Fungsi untuk menggeser slide
+function moveSlide(direction) {
+  currentSlideIndex += direction; // Tambahkan atau kurangi indeks
+  // Looping jika mencapai batas
+  if (currentSlideIndex < 0) {
+    currentSlideIndex = slides.length - 1; // Jika kurang dari 0, ke slide terakhir
+  } else if (currentSlideIndex >= slides.length) {
+    currentSlideIndex = 0; // Jika lebih dari total slide, kembali ke slide pertama
+  }
+  showSlide(currentSlideIndex); // Tampilkan slide sesuai indeks
+}
+
+// Menutup popup saat mengklik di luar gambar
+document.querySelector(".popup-image").onclick = (e) => {
+  if (e.target === e.currentTarget) {
+    e.currentTarget.style.display = "none";
+  }
+};
+
+// Event listener untuk tombol panah di keyboard
+document.addEventListener("keydown", (event) => {
+  if (document.querySelector(".popup-image").style.display === "block") {
+    if (event.key === "ArrowRight") {
+      moveSlide(1); // Geser ke kanan (slide selanjutnya)
+    } else if (event.key === "ArrowLeft") {
+      moveSlide(-1); // Geser ke kiri (slide sebelumnya)
+    }
+  }
+});

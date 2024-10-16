@@ -768,6 +768,7 @@ aside article {
   text-align: center;
 }
 
+/* Slideshow - Tugas 2 */
 /* gallery */
 #gallery {
   display: flex;
@@ -806,30 +807,28 @@ aside article {
   transform: scale(1.07);
 }
 
-.gallery-img-1 {
+img.gallery-img-1 {
   cursor: pointer;
-  background: url("assets/images/xaviera-4.jpg") no-repeat;
-  background-size: cover;
+  object-fit: cover;
+  background-position: center;
   border-radius: 10px;
   height: 150px;
   width: 118px;
   transition: transform 0.3s ease;
 }
 
-.gallery-img-2 {
+img.gallery-img-2 {
   cursor: pointer;
-  background: url("assets/images/riswan-2.jpg") no-repeat;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 10px;
   height: 150px;
   width: 222px;
   transition: transform 0.3s ease;
 }
 
-.gallery-img-3 {
+img.gallery-img-3 {
   cursor: pointer;
-  background: url("assets/images/xaviera-3.jpg") 100% 40% no-repeat;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 10px;
   height: 150px;
   width: 170px;
@@ -845,11 +844,10 @@ aside article {
   gap: 6px;
 }
 
-.gallery-img-4 {
+img.gallery-img-4 {
   cursor: pointer;
-  background-image: url("assets/images/riswan-4.jpg");
-  background-size: cover;
-  background-position: 100% 40%;
+  object-fit: cover;
+  background-position: 100%;
   background-repeat: no-repeat;
   border-radius: 10px;
   height: 72px;
@@ -857,10 +855,10 @@ aside article {
   transition: transform 0.3s ease;
 }
 
-.gallery-img-5 {
+img.gallery-img-5 {
   cursor: pointer;
-  background-image: url("assets/images/xaviera-5.jpg");
   background-size: cover;
+  object-fit: cover;
   background-position: 100% 40%;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -874,10 +872,9 @@ aside article {
   gap: 10px;
 }
 
-.gallery-img-6 {
+img.gallery-img-6 {
   cursor: pointer;
-  background-image: url("assets/images/riswan-3.jpg");
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
   height: 150px;
@@ -887,13 +884,64 @@ aside article {
 
 .gallery-img-7 {
   cursor: pointer;
-  background-image: url("assets/images/xaviera-7.jpg");
-  background-size: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
   height: 150px;
   width: 170px;
   transition: transform 0.3s ease;
+}
+
+/* Popup image dan background blur gelap */
+.popup-image {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.popup-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 750px;
+  width: 90%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Tanda Panah untuk slideshow ke foto selanjutnya */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow.left {
+  left: 30px;
+}
+
+.arrow.right {
+  right: 35px;
 }
 
 /* RSVP */
