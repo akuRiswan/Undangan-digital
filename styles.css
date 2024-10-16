@@ -212,18 +212,6 @@ body {
   height: 30px;
 }
 
-/* bagian kiri */
-/* aside {
-  height: 100vh;
-  width: fit-content;
-  align-items: end;
-  width: 100%;
-  display: flex;
-  position: sticky;
-  top: 0;
-  z-index: -99;
-} */
-
 aside {
   z-index: -99;
 }
